@@ -28,13 +28,7 @@ const Home = () => {
                 <About/>
         </section>
         <section>
-                <Testimonials/>
-        </section>
-        <section>
                 <Contact/>
-        </section>
-        <section>
-                <Faq/>
         </section>
     </main>
     <Footer/>

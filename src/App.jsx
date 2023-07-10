@@ -4,7 +4,7 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className=' font-Montserrat text-para'>
+    <div className=' font-Montserrat'>
       <Home/>
     </div>
   )

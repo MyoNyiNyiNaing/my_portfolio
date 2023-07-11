@@ -1,11 +1,14 @@
 import React from "react";
 import "./Footer.css";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Footer = () => {
+  Aos.init();
   return (
     <footer className=" bg-black text-white pt-16 md:pt-32 pb-5">
       <div className=" max-w-[1215px] max-lg:px-5 lg:mx-auto">
-        <div className=" mb-10 md:mb-20 text-[30px] md:text-title_sm lg:text-title font-[700]">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className=" mb-10 md:mb-20 text-[30px] md:text-title_sm lg:text-title font-[700]">
           <h1 className=" mb-2">Ready to make something kickass?</h1>
           <a
             href="#"
@@ -15,7 +18,7 @@ const Footer = () => {
           </a>
         </div>
         {/* footer link */}
-        <div className=" mb-20  md:mb-40 grid lg:grid-cols-2 gap-20">
+        <div data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" className=" mb-20  md:mb-40 grid lg:grid-cols-2 gap-20">
           <div className=" text-sm text-[#575757] space-y-3">
             <a href="#">
               <img

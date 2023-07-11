@@ -9,7 +9,7 @@ const Contact = () => {
 
   Aos.init();
   return (
-    <div className=" my-20 max-w-[1215px] max-lg:px-5 mx-auto">
+    <div id="contact" className=" my-20 max-w-[1215px] max-lg:px-5 mx-auto">
       {/* contact wrapper  */}
       <div className=" grid lg:grid-cols-5 gap-y-10 sm:gap-20">
         {/* left  */}

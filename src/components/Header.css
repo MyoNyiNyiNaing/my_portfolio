@@ -55,3 +55,7 @@
      transform: translate(30px,-11px) rotatez(45deg);
    
    }
+
+   .nav-link .active {
+    color : rgb(156 163 175);
+   }

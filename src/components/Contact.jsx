@@ -1,9 +1,122 @@
-import React from 'react'
+import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div className=" my-20 max-w-[1215px] max-lg:px-5 mx-auto">
+      {/* contact wrapper  */}
+      <div className=" grid lg:grid-cols-5 gap-y-10 sm:gap-20">
+        {/* left  */}
+        <div className="lg:col-span-2 text-base text-gray-500 space-y-10">
+          <h1 className=" text-title_sm md:text-title font-[700] text-black">
+            Get in touch
+          </h1>
+          <p className="">
+            Have a project in mind? Looking to partner or work together? Reach
+            out through the form and I'll get back to you in the next 48 hours.
+          </p>
+          <div className=" font-[700] space-y-5">
+            <div className=" flex items-center gap-2">
+              <img
+                src="https://assets.website-files.com/5fef5619b640934b33c2385e/606421699f78709a207218d0_Vector-2.svg"
+                alt=""
+              />
+              <div class="">hi@thefolio.com</div>
+            </div>
+            <div className=" flex items-center gap-2">
+              <img
+                src="https://assets.website-files.com/5fef5619b640934b33c2385e/60642167a6a39387b123008f_Vector-1.svg"
+                alt=""
+              />
+              <div class="">+889-776-899</div>
+            </div>
+          </div>
+        </div>
 
-export default Contact
+        {/* right  */}
+        <div className=" lg:col-span-3">
+          {/* form wrapper  */}
+          <div className=" space-y-8">
+            {/* name wrapper  */}
+            <div className=" grid md:grid-cols-2 gap-10">
+              <div className=" flex flex-col gap-3">
+                <label htmlFor="first" className=" font-[700]">
+                  First Name
+                </label>
+                <input
+                  id="first"
+                  type="text"
+                  className=" py-4 px-5 bg-gray-100 outline-none"
+                  placeholder="First Name"
+                />
+              </div>
+              <div className=" flex flex-col gap-3">
+                <label htmlFor="last" className=" font-[700]">
+                  Last Name
+                </label>
+                <input
+                  id="last"
+                  type="text"
+                  className=" py-4 px-5 bg-gray-100 outline-none"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            {/* email  */}
+            <div className=" flex flex-col gap-3">
+              <label htmlFor="email" className=" font-[700]">
+                Your Email
+              </label>
+              <div className=" flex items-center gap-3 px-5 bg-gray-100">
+                <img
+                  className=" w-5"
+                  src="https://assets.website-files.com/5fef5619b640934b33c2385e/606421699f78709a207218d0_Vector-2.svg"
+                ></img>
+                <input
+                  id="email"
+                  type="email"
+                  className=" py-4 bg-gray-100 outline-none"
+                  placeholder="Enter your e-mail"
+                />
+              </div>
+            </div>
+            {/* budget  */}
+            <div class="flex flex-col gap-3">
+              <label htmlFor="Budget-2" class="font-[700]">
+                Your Budget
+              </label>
+              <div  className=" relative text-gray-500">
+                <img className=" absolute top-4 left-5 w-5" src="https://assets.website-files.com/5fef5619b640934b33c2385e/60642169c28d21d6831de16d_Vector.svg" alt="" />
+                <select
+                id="Budget-2"
+                required=""
+                class=" py-4 pl-12 bg-gray-100 outline-none w-full"
+              >
+                <option value="First">1k-3k</option>
+                <option value="Second">3k-5k</option>
+                <option value="Third">5k-10k</option>
+                <option value="Fourth">More than 10k</option>
+              </select>
+              </div>
+            </div>
+
+            {/* Detail  */}
+            <div className=" flex flex-col gap-3">
+                <label htmlFor="first" className=" font-[700]">
+                Tell me a bit more what you are looking for?
+                </label>
+                <textarea
+                  id="first"
+                  type="text"
+                  className=" py-4 px-5 bg-gray-100 outline-none"
+                  placeholder="Text Here"
+                />
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

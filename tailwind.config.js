@@ -13,7 +13,7 @@ export default {
     },
     fontSize: {
       sm: ['16px', '28px'],
-      base: ['22px', '33px'],
+      base: ['20px', '30px'],
       base_sm : ['19px','28.5px'],
       lg: ['24px', '26.4px'],
       hero_title: ['68px', '74.8px'],

@@ -4,7 +4,7 @@ import ServicesCard from "./ServicesCard";
 
 const Services = () => {
   return (
-    <div className="max-w-[1098px] py-[80px] mx-[21px] md:mx-auto flex flex-col justify-center">
+    <div className="max-w-[1098px] py-[80px]  px-5 md:mx-auto flex flex-col justify-center">
       <div className=" text-center">
         <div className=" inline-block transform translate-x-0 translate-y-0 translate-z-0 scale-x-100 scale-y-100 scale-z-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d">
           <h6 className=" text-transparent bg-clip-text leading-[100%] bg-gradient-to-r from-purple-600 via-red-500 to-yellow-500 inline-block font-bold text-base uppercase tracking-[4px]">

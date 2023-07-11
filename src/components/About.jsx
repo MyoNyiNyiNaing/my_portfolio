@@ -48,7 +48,7 @@ const About = () => {
     },
   ];
   return (
-    <div className="max-w-[1215px] px-5 mx-auto">
+    <div id="about" className="max-w-[1215px] px-5 mx-auto">
       <div className="flex flex-wrap justify-between mb-[90px]">
         <div className="w-full mb-5 md:m-0 md:w-[45%]">
           <h3 className="uppercase text-transparent bg-clip-text leading-[100%] bg-gradient-to-r from-purple-600 via-red-500 to-yellow-500 text-base font-[600] tracking-wider my-2">frontend developer</h3>

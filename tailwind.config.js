@@ -9,6 +9,7 @@ export default {
       },
     },
     fontSize: {
+
       sm: ["16px", "28px"],
       base: ["22px", "33px"],
       base_sm: ["19px", "28.5px"],
@@ -18,6 +19,7 @@ export default {
       title_sm: ["40px", "44px"],
       btn: ["18px", "18px"],
     },
+
   },
   plugins: [],
 };

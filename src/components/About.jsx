@@ -1,8 +1,11 @@
 import React from "react";
 import { GoDotFill } from "react-icons/go";
 import {PiArrowUpRightBold} from "react-icons/pi"
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const About = () => {
+  Aos.init();
   const education = [
     {
       name: "MMSIT",
@@ -48,14 +51,14 @@ const About = () => {
     },
   ];
   return (
-    <div id="about" className="max-w-[1215px] px-5 mx-auto">
-      <div className="flex flex-wrap justify-between mb-[90px]">
+    <div  id="about" className="max-w-[1215px] px-5 mx-auto">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300" className="flex flex-wrap justify-between mb-[90px]">
         <div className="w-full mb-5 md:m-0 md:w-[45%]">
           <h3 className="uppercase text-transparent bg-clip-text leading-[100%] bg-gradient-to-r from-purple-600 via-red-500 to-yellow-500 text-base font-[600] tracking-wider my-2">frontend developer</h3>
           <h1 className="text-[54px] text-black font-[700]">That's me!</h1>
         </div>
         <div className="w-full md:w-[55%]">
-          <p className="text-base text-gray-500 font-[500] leading-9">
+          <p className="text-base_sm md:text-base text-gray-500 font-[500] leading-9">
           Experienced frontend web developer adept at crafting visually captivating user interfaces and delivering seamless online experiences with a deep understanding of modern web technologies.
           </p>
         </div>
@@ -79,12 +82,12 @@ const About = () => {
         {/* education */}
         <div className=" w-full md:w-[45%] mb-[90px] md:m-0">
           <div>
-            <h3 className="text-[36px] font-[700] mb-8">📚 Education</h3>
+            <h3  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="text-[36px] font-[700] mb-8">📚 Education</h3>
           </div>
           <div>
-            {education?.map((el) => {
+            {education?.map((el,index) => {
               return (
-                <div className="group">
+                <div  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay={150*index} className="group">
                    <div className="flex items-start justify-between py-[40px] h-[150px] border-b-gray-200 border-b-2">
                   <div className="flex flex-wrap gap-3 w-full items-end justify-between me-5">
                     <div>
@@ -111,11 +114,11 @@ const About = () => {
         {/* work experiences */}
         <div  className="w-full md:w-[45%]">
           <div>
-            <h3 className="text-[36px] font-[700] mb-8">💼 Work Experience</h3>
+            <h3  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="text-[36px] font-[700] mb-8">💼 Work Experience</h3>
           </div>
-          {workExperience.map((el) => {
+          {workExperience.map((el,index) => {
             return (
-              <div className="group">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay={150*index} className="group">
                 <div className=" flex items-start justify-between py-[40px] h-[150px]  border-b-gray-200 border-b-2">
                   <div className="flex flex-wrap gap-3 w-full items-end justify-between me-5">
                     <div className="flex">

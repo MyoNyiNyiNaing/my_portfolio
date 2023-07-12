@@ -15,19 +15,19 @@ const Home = () => {
     
     <Header/>
     <main>
-        <section>
+        <section className=''>
                 <Hero/>
         </section>
-        <section>
+        <section className=' py-[80px]'>
                 <Services/>
         </section>
-        <section>
+        <section className=' py-[80px]'>
                 <Projects/>
         </section>
-        <section>
+        <section className=' py-[80px]'>
                 <About/>
         </section>
-        <section>
+        <section className=' py-[80px] pb-[160px]'>
                 <Contact/>
         </section>
     </main>

@@ -65,16 +65,16 @@ const About = () => {
       </div>
 
       {/* gallery */}
-      <div className="flex gap-5 flex-wrap justify-between mb-[90px]">
-        <div className="w-full md:w-[300px]">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mb-[90px]">
+        <div className="">
           <img className="h-[300px] md:h-[500px] w-full object-cover object-right-bottom" src="src\assets\about\contact2.jpg" />
         </div>
-        <div className="w-full md:w-[500px]">
+        <div className="col-span-1 lg:col-span-2 ">
           <img className="h-[300px] md:h-[500px] w-full object-cover" src="src\assets\about\contact.jpg" />
         </div>
-        <div className="w-full flex justify-between md:flex md:flex-col md:w-[300px]">
-          <img  className="h-[150px] md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale2.jpg" />
-          <img  className="h-[150px] md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale.jpg" />
+        <div className=" flex justify-between lg:flex lg:flex-col">
+          <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale2.jpg" />
+          <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale.jpg" />
         </div>
       </div>
 

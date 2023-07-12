@@ -10,7 +10,7 @@ const ProjectsCard = ({ image, subTitle, title, link }) => {
       <div className="relative">
         <div className=" inline-block border overflow-hidden relative">
           <img
-            className="group-hover:scale-125 transition-all h-[325px] duration-500 cursor-pointer"
+            className="group-hover:scale-125 transition-all h-[325px] object-cover duration-500 cursor-pointer"
             src={image}
             alt={title}
           />

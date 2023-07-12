@@ -15,10 +15,10 @@ const Header = () => {
   const handleShowNav = () => {
     let scrollTop = window.scrollY;
     if (lastScroll < scrollTop) {
-      console.log("scroll down");
+      // console.log("scroll down");
       setShowNav(false);
     } else {
-      console.log("scroll up");
+      // console.log("scroll up");
       setShowNav(true);
     }
 
@@ -36,7 +36,7 @@ const Header = () => {
         } z-50  sticky top-0  transition-all duration-300 bg-white`}
       >
         <div
-          className={` max-w-[1215px] z-50 max-lg:px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white`}
+          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white`}
         >
           <div>
             <img

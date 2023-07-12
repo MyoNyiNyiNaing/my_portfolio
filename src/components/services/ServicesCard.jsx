@@ -1,18 +1,20 @@
-import React from "react";
+import "aos/dist/aos.css"
+import Aos from "aos";
 
 const ServicesCard = ({ img, title, para, desc1, desc2, desc3 }) => {
+  Aos.init()
   return (
     <div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">
         <img className=" object-contain w-[70px]" src={img} alt="" />
       </div>
-      <div className=" mt-[42px] mb-[20px]">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100" className=" mt-[42px] mb-[20px]">
         <h5 className=" text-lg leading-[110%] font-bold">{title}</h5>
       </div>
-      <div className=" max-w-[85%] mb-[25px]">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100" className=" max-w-[85%] mb-[25px]">
         <p className=" text-sm text-[#666]">{para}</p>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">
         <div className=" mb-[10px]">
           <div className="flex justify-start items-center">
             <div className=" flex w-[7px] h-[7px] justify-center items-center rounded-full bg-[#000]"></div>

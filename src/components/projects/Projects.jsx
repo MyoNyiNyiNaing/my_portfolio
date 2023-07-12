@@ -1,10 +1,13 @@
 import "./projects.css";
 import { projects } from "./projects";
 import ProjectsCard from "./ProjectsCard";
+import "aos/dist/aos.css"
+import Aos from "aos";
 
 const Projects = () => {
+  Aos.init();
   return (
-    <div id="projects" className="">
+    <div id="projects" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100" className="">
       <div className="max-w-[1215px] px-5  mx-auto flex items-center justify-between ">
         <div className="">
           <div>

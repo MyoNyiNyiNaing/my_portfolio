@@ -14,10 +14,10 @@ const About = () => {
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300" className="flex flex-wrap justify-between mb-[90px]">
         <div className="w-full mb-5 md:m-0 md:w-[45%]">
           <h3 className="uppercase text-transparent bg-clip-text leading-[100%] bg-gradient-to-r from-purple-600 via-red-500 to-yellow-500 text-base font-[600] tracking-wider my-2">frontend developer</h3>
-          <h1 className="text-[54px] text-black font-[700]">That's me!</h1>
+          <h1 className="text-[54px] dark:text-white text-black font-[700]">That's me!</h1>
         </div>
         <div className="w-full md:w-[55%]">
-          <p className="text-base_sm md:text-base text-gray-500 font-[500] leading-9">
+          <p className="text-base_sm md:text-base dark:text-gray-300 text-gray-500 font-[500] leading-9">
           Experienced frontend web developer adept at crafting visually captivating user interfaces and delivering seamless online experiences with a deep understanding of modern web technologies.
           </p>
         </div>

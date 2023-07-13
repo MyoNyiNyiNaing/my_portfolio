@@ -3,6 +3,8 @@ import "./Contact.css";
 import Button from "./Button";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {IoMdMail} from 'react-icons/io'
+import {BsTelephoneFill} from 'react-icons/bs'
 
 const Contact = () => {
   Aos.init();
@@ -13,8 +15,8 @@ const Contact = () => {
           {/* contact wrapper  */}
           <div className=" grid lg:grid-cols-5 gap-y-10 sm:gap-20">
             {/* left  */}
-            <div className="lg:col-span-2 text-base_sm md:text-base text-gray-500 font-[500] space-y-10">
-              <h1 className=" text-title_sm md:text-title font-[700] text-black">
+            <div className="lg:col-span-2 text-base_sm md:text-base text-gray-500 dark:text-gray-300 font-[500] space-y-10">
+              <h1 className=" text-title_sm md:text-title font-[700] text-black dark:text-white">
                 Get in touch
               </h1>
               <p
@@ -34,24 +36,18 @@ const Contact = () => {
                 data-aos-once="true"
               >
                 <div className=" flex items-center gap-2">
-                  <img
-                    src="https://assets.website-files.com/5fef5619b640934b33c2385e/606421699f78709a207218d0_Vector-2.svg"
-                    alt=""
-                  />
+                  <IoMdMail className=" text-[25px]"/>
                   <div class="">hi@thefolio.com</div>
                 </div>
                 <div className=" flex items-center gap-2">
-                  <img
-                    src="https://assets.website-files.com/5fef5619b640934b33c2385e/60642167a6a39387b123008f_Vector-1.svg"
-                    alt=""
-                  />
+                  <BsTelephoneFill />
                   <div class="">+889-776-899</div>
                 </div>
               </div>
             </div>
 
             {/* right  */}
-            <div className=" lg:col-span-3">
+            <div className=" lg:col-span-3 dark:text-white">
               {/* form wrapper  */}
               <div
                 className=" space-y-8"

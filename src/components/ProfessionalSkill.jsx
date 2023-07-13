@@ -28,14 +28,14 @@ const ProfessionalSkill = ({ data }) => {
     }
   }, [number, duration, inView]);
   return (
-    <div className="text-gray-500 font-[500] mb-2 w-fit">
+    <div className="text-gray-500 dark:text-gray-300 font-[500] mb-2 w-fit">
         <div className=" relative">
           <RingProgress
             ref={ref}
             thickness={8}
-            sections={[{ value: count.toString(), color: "red" }]}
+            sections={[{ value: count.toString(), color: "#D1A002" }]}
           />
-          <div className="text-gray-500 font-[500] absolute transform -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%]">
+          <div className="absolute transform -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%]">
             {count}%
           </div>
         </div>

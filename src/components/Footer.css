@@ -35,3 +35,7 @@
 .footer-link:hover::before {
   width: 75%;
 }
+
+html.dark .footer-link::before {
+  background-color: black;
+}

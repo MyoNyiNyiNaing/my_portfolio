@@ -1,12 +1,17 @@
 import React from "react";
 import Button from "./Button";
 import { FiArrowRight } from "react-icons/fi";
-import profile from "../assets/profile-removebg-preview.png";
+// import profile from "../assets/profile-removebg-preview.png";
+import profile2 from "../assets/profile2.png"
+import Aos from "aos";
+import "aos/dist/aos.css"
 const Hero = () => {
+  Aos.init();
+
   return (
-    <div id="home" className="max-w-[1215px] px-5 mx-auto">
-      <div className="flex flex-wrap justify-between items-center">
-        <div className="w-[800px] mx-auto lg:w-[650px] mb-[100px] lg:mb-0">
+    <div id="home" className="max-w-[1215px] h-auto lg:h-screen pt-5 lg:pt-[80px] mx-auto">
+      <div className="flex flex-wrap-reverse px-5 justify-between items-center">
+        <div className="w-full lg:px-0 mx-auto lg:w-[650px] mb-[100px] lg:mb-0">
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -25,7 +30,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-once="true"
             data-aos-delay="200"
-            className="max-w-[600px] text-base_sm md:text-base font-[500] mb-10 text-gray-500 tracking-tight"
+            className="max-w-[600px] text-base_sm md:text-base font-[500] mb-10 dark:text-gray-300 text-gray-500 tracking-tight"
           >
             Hi! I’m Jake, a frontend developer based in Yangon,Myanmar. I create
             user-friendly interfaces for fast-growing startups.
@@ -35,7 +40,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-once="true"
             data-aos-delay="300"
-            className="flex flex-col  md:flex-row items-start md:items-center gap-5 ps-2"
+            className="flex flex-col md:flex-row items-start md:items-center gap-5 ps-2"
           >
             <Button text={"Book a call"} />
             <div className="group flex items-center gap-3 font-[700] cursor-pointer">
@@ -47,11 +52,12 @@ const Hero = () => {
         <div
           data-aos="zoom-out"
           data-aos-duration="1000"
-          data-aos-once="true"
+          data-aos-once="true" 
           data-aos-delay="100"
-          className="mx-auto"
+          className="mx-auto mb-5 md:mb-0 w-[300px] xl:w-[500px]"
         >
-          <img src={profile} />
+          <img src={profile2} />
+        
         </div>
       </div>
     </div>

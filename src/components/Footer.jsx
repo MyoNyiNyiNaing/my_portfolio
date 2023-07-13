@@ -92,7 +92,7 @@ const Footer = () => {
         {/* copy right */}
         <div>
           <div className=" text-sm text-[#8A93A2]">
-            © Jake 2023. All rights reserved.
+            © 2023 copyright all right reserved by Jake
           </div>
         </div>
       </div>

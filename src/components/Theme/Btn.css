@@ -1,15 +1,12 @@
 .intro {
-  animation: intro 2s ease;
+  animation: intro 1s ease;
 }
 
 @keyframes intro {
   0% {
     right: -36px;
   }
-  50% {
-    right: 0px;
-  }
   100% {
-    right: -36px;
+    right: 0px;
   }
 }

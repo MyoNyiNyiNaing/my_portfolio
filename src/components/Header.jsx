@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import ScrollTop from "./ScrollTop";
-import { Link } from 'react-scroll'
-import {AiOutlineArrowRight} from 'react-icons/ai'
+import { Link } from "react-scroll";
+import ThemeBtn from "./Theme/ThemeBtn";
+import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 
-const Header = () => {
+const Header = ({ darkMode, themeSwitch }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
   const [showNav, setShowNav] = useState(true);
@@ -34,49 +35,93 @@ const Header = () => {
       <nav
         className={`${
           showNav ? " translate-y-0" : "-translate-y-[100%]"
-        } z-50  sticky top-0  transition-[transform] duration-300 bg-white dark:bg-black`}
+        } z-50  sticky top-0  transition-all duration-300 bg-white `}
       >
         <div
-          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 `}
+          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5  `}
         >
           <div>
-            <h1 className=" text-[25px] font-[700] dark:text-white">My Portfolio<span className=" text-red-400">.</span></h1>
+            <img
+              src="https://assets.website-files.com/5fef5619b640934b33c2385e/6078ab3cfa1bca879adb93d1_Group%2070.svg"
+              alt=""
+            />
           </div>
           <div className=" max-lg:hidden">
-            <ul className="nav-link flex items-center gap-10 dark:text-white">
+            <ul className="nav-link flex items-center gap-10">
               <li>
-                <Link to='home' activeClass='active' spy={true} className=" cursor-pointer text-sm font-[500] hover:text-gray-400">
+                <Link
+                  to="home"
+                  activeClass="active"
+                  spy={true}
+                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to='about' activeClass='active' spy={true} className=" cursor-pointer text-sm font-[500] hover:text-gray-400">
+                <Link
+                  to="about"
+                  activeClass="active"
+                  spy={true}
+                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to='services' activeClass='active' spy={true} className=" cursor-pointer text-sm font-[500] hover:text-gray-400">
+                <Link
+                  to="services"
+                  activeClass="active"
+                  spy={true}
+                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to='projects' activeClass='active' spy={true} className=" cursor-pointer text-sm font-[500] hover:text-gray-400">
+                <Link
+                  to="projects"
+                  activeClass="active"
+                  spy={true}
+                  className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to='contact' activeClass='active' spy={true}
+                <Link
+                  to="contact"
+                  activeClass="active"
+                  spy={true}
                   className=" cursor-pointer text-sm font-[500] flex items-center group"
                 >
                   Book a call{" "}
-                  <AiOutlineArrowRight className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"/>
+                  <img
+                    className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"
+                    src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
+                  />
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* mobile menu  */}
-          <div className="lg:hidden">
+
+          <div className="flex items-center lg:hidden">
+            <button
+              onClick={() => themeSwitch()}
+              className={`p-3 rounded-md outline outline-offset-0 text-md transition-all duration-500  ${
+                darkMode
+                  ? "bg-white outline-black text-black"
+                  : "outline-white bg-black text-white"
+              }`}
+            >
+              {darkMode ? (
+                <BsMoonStarsFill className="hover:animate-pulse" />
+              ) : (
+                <BsSunFill className=" hover:animate-[spin_2s_infinite]" />
+              )}
+            </button>
             <div
               onClick={() => setMenuOpen(!menuOpen)}
               className={`${menuOpen && "open"} menu-icon`}
@@ -97,7 +142,10 @@ const Header = () => {
         >
           <ul className="nav-link flex flex-col gap-10 ">
             <li>
-              <Link to='home' activeClass='active' spy={true}
+              <Link
+                to="home"
+                activeClass="active"
+                spy={true}
                 onClick={() => setMenuOpen(!menuOpen)}
                 className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
               >
@@ -105,7 +153,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='about' activeClass='active' spy={true}
+              <Link
+                to="about"
+                activeClass="active"
+                spy={true}
                 onClick={() => setMenuOpen(!menuOpen)}
                 className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
               >
@@ -113,7 +164,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='services' activeClass='active' spy={true}
+              <Link
+                to="services"
+                activeClass="active"
+                spy={true}
                 onClick={() => setMenuOpen(!menuOpen)}
                 className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
               >
@@ -121,7 +175,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='projects' activeClass='active' spy={true}
+              <Link
+                to="projects"
+                activeClass="active"
+                spy={true}
                 onClick={() => setMenuOpen(!menuOpen)}
                 className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
               >
@@ -129,7 +186,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='contact' activeClass='active' spy={true}
+              <Link
+                to="contact"
+                activeClass="active"
+                spy={true}
                 onClick={() => setMenuOpen(!menuOpen)}
                 className=" cursor-pointer text-sm font-[500] flex items-center group"
               >

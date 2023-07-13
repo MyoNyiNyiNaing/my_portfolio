@@ -30,11 +30,11 @@ const TechnicalSkill = ({ data }) => {
   }, [number, duration, inView]);
   return (
     <div ref={ref} className=' mb-8'>
-        <div className=' flex items-center justify-between mb-3 text-gray-500 font-[500]'>
+        <div className=' flex items-center justify-between mb-3 text-gray-500 dark:text-gray-300 font-[500]'>
             <div>{label}</div>
             <div>{count}%</div>
         </div>
-      <Progress radius="xs" color="red" value={count} />
+      <Progress radius="xs" color="#D1A002" value={count} />
 
       
     </div>

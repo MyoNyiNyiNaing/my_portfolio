@@ -3,6 +3,7 @@ import "./Header.css";
 import ScrollTop from "./ScrollTop";
 import { Link } from "react-scroll";
 import ThemeBtn from "./Theme/ThemeBtn";
+import {AiOutlineArrowRight} from "react-icons/ai"
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 
 const Header = ({ darkMode, themeSwitch }) => {
@@ -35,13 +36,13 @@ const Header = ({ darkMode, themeSwitch }) => {
       <nav
         className={`${
           showNav ? " translate-y-0" : "-translate-y-[100%]"
-        } z-50  sticky top-0  transition-all duration-300 bg-white `}
+        } z-50 sticky top-0  transition-all duration-300 bg-white dark:bg-[#150112] dark:text-white`}
       >
         <div
-          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white `}
+          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white dark:bg-[#150112] dark:text-white`}
         >
           <div>
-            <h1 className=" text-white dark:text-black text-[25px] font-[700]">
+            <h1 className=" text-black dark:text-white text-[25px] font-[700]">
                 My Portfolio<span className=" text-red-400">.</span>
               </h1>
           </div>
@@ -92,13 +93,10 @@ const Header = ({ darkMode, themeSwitch }) => {
                   to="contact"
                   activeClass="active"
                   spy={true}
-                  className=" cursor-pointer text-sm font-[500] flex items-center group"
+                  className=" cursor-pointer text-sm font-[500] flex items-center group hover:text-gray-400"
                 >
                   Book a call{" "}
-                  <img
-                    className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"
-                    src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
-                  />
+                  <AiOutlineArrowRight className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"/>
                 </Link>
               </li>
             </ul>
@@ -137,7 +135,7 @@ const Header = ({ darkMode, themeSwitch }) => {
             menuOpen
               ? "translate-y-0 top-[70px]  shadow-2xl"
               : "-translate-y-full top-0"
-          } bg-white lg:hidden h-fit w-full absolute py-8 px-5 left-0 transition-all duration-500`}
+          } bg-white dark:bg-[#150112] dark:text-white lg:hidden h-fit w-full absolute py-8 px-5 left-0 transition-all duration-500`}
         >
           <ul className="nav-link flex flex-col gap-10 ">
             <li>
@@ -190,13 +188,10 @@ const Header = ({ darkMode, themeSwitch }) => {
                 activeClass="active"
                 spy={true}
                 onClick={() => setMenuOpen(!menuOpen)}
-                className=" cursor-pointer text-sm font-[500] flex items-center group"
+                className=" cursor-pointer text-sm font-[500] flex items-center group hover:text-gray-400"
               >
                 Book a call{" "}
-                <img
-                  className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"
-                  src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
-                />
+                <AiOutlineArrowRight className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"/>
               </Link>
             </li>
           </ul>

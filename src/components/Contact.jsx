@@ -65,7 +65,7 @@ const Contact = () => {
                     <input
                       id="first"
                       type="text"
-                      className=" py-4 px-5 bg-gray-100 outline-none"
+                      className=" py-4 px-5 bg-gray-100 outline-none dark:text-gray-500"
                       placeholder="First Name"
                     />
                   </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                     <input
                       id="last"
                       type="text"
-                      className=" py-4 px-5 bg-gray-100 outline-none"
+                      className=" py-4 px-5 bg-gray-100 outline-none dark:text-gray-500"
                       placeholder="Last Name"
                     />
                   </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                     <input
                       id="email"
                       type="email"
-                      className=" py-4 bg-gray-100 outline-none"
+                      className=" py-4 bg-gray-100 outline-none dark:text-gray-500"
                       placeholder="Enter your e-mail"
                     />
                   </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                     id="first"
                     type="text"
                     rows="5"
-                    className=" py-4 px-5 bg-gray-100 outline-none"
+                    className=" py-4 px-5 bg-gray-100 outline-none dark:text-gray-500"
                     placeholder="Text Here"
                   />
                 </div>

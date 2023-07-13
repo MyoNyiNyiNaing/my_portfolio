@@ -38,13 +38,12 @@ const Header = ({ darkMode, themeSwitch }) => {
         } z-50  sticky top-0  transition-all duration-300 bg-white `}
       >
         <div
-          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5  `}
+          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white `}
         >
           <div>
-            <img
-              src="https://assets.website-files.com/5fef5619b640934b33c2385e/6078ab3cfa1bca879adb93d1_Group%2070.svg"
-              alt=""
-            />
+            <h1 className=" text-white dark:text-black text-[25px] font-[700]">
+                My Portfolio<span className=" text-red-400">.</span>
+              </h1>
           </div>
           <div className=" max-lg:hidden">
             <ul className="nav-link flex items-center gap-10">
@@ -138,7 +137,7 @@ const Header = ({ darkMode, themeSwitch }) => {
             menuOpen
               ? "translate-y-0 top-[70px]  shadow-2xl"
               : "-translate-y-full top-0"
-          } bg-white h-fit w-full absolute py-8 px-5 left-0 transition-all duration-500`}
+          } bg-white lg:hidden h-fit w-full absolute py-8 px-5 left-0 transition-all duration-500`}
         >
           <ul className="nav-link flex flex-col gap-10 ">
             <li>

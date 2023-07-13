@@ -15,7 +15,7 @@ const ServicesCard = ({ img,img2, title, para, desc1, desc2, desc3 }) => {
         <h5 className=" text-lg leading-[110%] font-bold">{title}</h5>
       </div>
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100" className=" max-w-[85%] mb-[25px]">
-        <p className=" text-sm dark:text-[#ddd] text-[#666]">{para}</p>
+        <p className=" text-sm dark:text-[#dadada] text-[#666]">{para}</p>
       </div>
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">
         <div className=" mb-[10px]">

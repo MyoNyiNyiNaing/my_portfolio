@@ -4,11 +4,11 @@ import { IoMdArrowForward } from "react-icons/io";
 const ProjectsCard = ({ image, subTitle, title, link }) => {
   return (
     <a href={link} target="_blank">
-      <div className=" border dark:border-gray-200/50">
+      <div className=" border border-gray-200/30 shadow">
         <div className="relative">
-          <div className=" inline-block overflow-hidden relative">
+          <div className=" h-[305px] overflow-hidden relative">
             <img
-              className="group-hover:scale-125 transition-all h-[325px] object-cover duration-500 cursor-pointer"
+              className="group-hover:scale-125 transition-all h-full w-full object-cover duration-500 cursor-pointer"
               src={image}
               alt={title}
             />

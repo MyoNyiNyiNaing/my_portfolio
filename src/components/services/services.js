@@ -1,7 +1,15 @@
+import whatCanIDo from "../../assets/services/whatcanido.svg"
+import whatCanIDoDark from "../../assets/services/whatcanidoDark.svg"
+import appIFlu from "../../assets/services/appIFlu.svg"
+import appIFluDark from "../../assets/services/appIFluDark.svg"
+import whatCanE from "../../assets/services/whatcanE.svg"
+import whatCanEDark from "../../assets/services/whatcanEDark.svg"
+
 export const services = [
   {
     id: 1,
-    img: "https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584362e74acfa6b75398_Group%2051.svg",
+    img: whatCanIDo,
+    img2: whatCanIDoDark,
     title: "What I can do for you",
     para: "Faster, better products that your users love. Here's all the services I provide:",
     desc1: "Design Strategy",
@@ -10,7 +18,8 @@ export const services = [
   },
   {
     id: 2,
-    img: "https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843b6409375f7c23f2b_Group%2017.svg",
+    img: appIFlu,
+    img2: appIFluDark,
     title: "Applications I'm fluent in",
     para: "Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.",
     desc1: "Sketch",
@@ -19,7 +28,8 @@ export const services = [
   },
   {
     id: 3,
-    img: "https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435ceaed068dde60ca_Group%2016.svg",
+    img: whatCanE,
+    img2: whatCanEDark,
     title: "What you can expect",
     para: "I design products that are more than pretty. I make them shippable and usable.",
     desc1: "Clean and functional",

@@ -4,6 +4,7 @@ import {PiArrowUpRightBold} from "react-icons/pi"
 import Aos from "aos";
 import "aos/dist/aos.css"
 import EducationExperience from "./Education&Experience";
+import Skills from "./Skills";
 
 const About = () => {
   Aos.init();
@@ -35,7 +36,12 @@ const About = () => {
           <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale.jpg" />
         </div>
       </div>
+      <div className=" mb-[90px]">
+        <Skills/>
+      </div>
+      <div>
       <EducationExperience />
+      </div>
     </div>
   );
 };

@@ -1,14 +1,19 @@
 import React from "react";
 import "./Footer.css";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 const Footer = () => {
   Aos.init();
   return (
     <footer className=" bg-black text-white pt-16 md:pt-32 pb-5">
       <div className=" max-w-[1215px] max-lg:px-5 lg:mx-auto">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className=" mb-10 md:mb-20 text-[30px] md:text-title_sm lg:text-title font-[700]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          className=" mb-10 md:mb-20 text-[30px] md:text-title_sm lg:text-title font-[700]"
+        >
           <h1 className=" mb-2">Ready to make something kickass?</h1>
           <a
             href="#"
@@ -18,7 +23,12 @@ const Footer = () => {
           </a>
         </div>
         {/* footer link */}
-        <div data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" className=" mb-20  md:mb-40 grid lg:grid-cols-2 gap-20">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-once="true"
+          className=" mb-20  md:mb-40 grid lg:grid-cols-2 gap-20"
+        >
           <div className=" text-sm text-[#575757] space-y-3">
             <a href="#">
               <img
@@ -37,31 +47,43 @@ const Footer = () => {
           </div>
 
           <div className=" grid grid-cols-2 md:grid-cols-3 gap-10 text-btn">
-            <a href="#" className=" relative w-fit footer-link">
+            <a href="#about" className=" relative w-fit footer-link">
               About
             </a>
-            <a href="#" className=" relative w-fit footer-link">
+            <a href="#services" className=" relative w-fit footer-link">
               Services
             </a>
-            <a href="#" className=" relative w-fit footer-link">
+            <a href="#experience" className=" relative w-fit footer-link">
               Experience
             </a>
-            <a href="#" className=" relative w-fit footer-link">
+            <a href="#contact" className=" relative w-fit footer-link">
               Contact
             </a>
             <a href="#" className=" relative w-fit footer-link">
               Blog
             </a>
-            <a href="#" className=" relative w-fit footer-link">
+            <a href="#projects" className=" relative w-fit footer-link">
               Projects
             </a>
-            <a href="#" className=" relative w-fit footer-link">
-              Dribble
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              className=" relative w-fit footer-link"
+            >
+              Facebook
             </a>
-            <a href="#" className=" relative w-fit footer-link">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              className=" relative w-fit footer-link"
+            >
               Instagram
             </a>
-            <a href="#" className=" relative w-fit footer-link">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              className=" relative w-fit footer-link"
+            >
               Twitter
             </a>
           </div>
@@ -70,33 +92,7 @@ const Footer = () => {
         {/* copy right */}
         <div>
           <div className=" text-sm text-[#8A93A2]">
-            © All rights reserved.{" "}
-            <a href="#" className=" font-[500] hover:text-white">
-              {" "}
-              Conversionflow
-            </a>
-            . Powered by{" "}
-            <a href="#" className=" font-[500] hover:text-white">
-              Webflow
-            </a>{" "}
-            /{" "}
-            <a href="#" className=" font-[500] hover:text-white">
-              Image License Info{" "}
-            </a>
-            /{" "}
-            <a href="#" className=" font-[500] hover:text-white">
-              {" "}
-              Instructions
-            </a>{" "}
-            /{" "}
-            <a href="#" className=" font-[500] hover:text-white">
-              Changelog{" "}
-            </a>
-            /{" "}
-            <a href="#" className=" font-[500] hover:text-white">
-              {" "}
-              Style Guide
-            </a>
+            © 2023 copyright all right reserved by Jake
           </div>
         </div>
       </div>

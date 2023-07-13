@@ -13,11 +13,13 @@ import ThemeBtn from "../components/Theme/ThemeBtn";
 const Home = () => {
   return (
     <>
+
       <Header />
       <main className=" relative dark:bg-black">
         <ThemeBtn />
         <section className="">
           <Hero />
+
         </section>
         <section className=" py-[80px]">
           <Services />

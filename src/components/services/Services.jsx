@@ -6,6 +6,7 @@ import Aos from "aos";
 
 const Services = () => {
   Aos.init();
+  
 
   return (
     <div

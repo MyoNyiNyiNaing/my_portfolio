@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 const Footer = () => {
   Aos.init();
   return (
-    <footer className=" bg-black text-white pt-16 md:pt-32 pb-5">
-      <div className=" max-w-[1215px] max-lg:px-5 lg:mx-auto">
+    <footer className=" bg-black  text-white dark:bg-gray-100 dark:text-black pt-16 md:pt-32 pb-5">
+      <div className=" max-w-[1215px] px-5 lg:mx-auto">
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -29,12 +29,11 @@ const Footer = () => {
           data-aos-once="true"
           className=" mb-20  md:mb-40 grid lg:grid-cols-2 gap-20"
         >
-          <div className=" text-sm text-[#575757] space-y-3">
+          <div className=" text-sm text-gray-500 space-y-3">
             <a href="#">
-              <img
-                src="https://assets.website-files.com/5fef5619b640934b33c2385e/6078d43538e88cf2a8ff4464_White%20Logo.svg"
-                alt=""
-              />
+              <h1 className=" text-white dark:text-black text-[25px] font-[700]">
+                My Portfolio<span className=" text-red-400">.</span>
+              </h1>
             </a>
             <p>4353 Delaware Avenue, San Francisco, USA</p>
             <a href="#" className=" flex items-center gap-2 ">

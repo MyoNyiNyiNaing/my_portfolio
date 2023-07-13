@@ -23,7 +23,7 @@ const Skills = () => {
   return (
     <div className=" grid md:grid-cols-2 gap-10">
       {/* technicalSkills  */}
-      <div className=" lg:w-[80%]">
+      <div className=" lg:w-[80%] mx-auto">
           <h1 className="text-[36px] font-[700] mb-8">Technical Skills</h1>
           <div>
           {technicalSkills.map(data => (
@@ -35,7 +35,7 @@ const Skills = () => {
         
         {/* professionalSkills  */}
 
-        <div className=" lg:w-[80%]">
+        <div className="lg:w-[80%] mx-auto">
           <h1 className="text-[36px] font-[700] mb-8">Professional Skills</h1>
           <div className=" grid grid-cols-2">
           {professionalSkills.map(data => (

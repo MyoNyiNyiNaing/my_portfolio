@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Header.css";
 import ScrollTop from "./ScrollTop";
 import { Link } from 'react-scroll'
+import {AiOutlineArrowRight} from 'react-icons/ai'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,19 +34,16 @@ const Header = () => {
       <nav
         className={`${
           showNav ? " translate-y-0" : "-translate-y-[100%]"
-        } z-50  sticky top-0  transition-all duration-300 bg-white`}
+        } z-50  sticky top-0  transition-[transform] duration-300 bg-white dark:bg-black`}
       >
         <div
-          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 bg-white`}
+          className={` max-w-[1215px] z-50 px-5 lg:mx-auto sticky top-0 flex items-center justify-between py-5 `}
         >
           <div>
-            <img
-              src="https://assets.website-files.com/5fef5619b640934b33c2385e/6078ab3cfa1bca879adb93d1_Group%2070.svg"
-              alt=""
-            />
+            <h1 className=" text-[25px] font-[700] dark:text-white">My Portfolio<span className=" text-red-400">.</span></h1>
           </div>
           <div className=" max-lg:hidden">
-            <ul className="nav-link flex items-center gap-10">
+            <ul className="nav-link flex items-center gap-10 dark:text-white">
               <li>
                 <Link to='home' activeClass='active' spy={true} className=" cursor-pointer text-sm font-[500] hover:text-gray-400">
                   Home
@@ -71,10 +69,7 @@ const Header = () => {
                   className=" cursor-pointer text-sm font-[500] flex items-center group"
                 >
                   Book a call{" "}
-                  <img
-                    className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"
-                    src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
-                  />
+                  <AiOutlineArrowRight className=" transition-all duration-200 transform translate-x-2 group-hover:translate-x-4"/>
                 </Link>
               </li>
             </ul>

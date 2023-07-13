@@ -14,7 +14,7 @@ const Home = () => {
     <>
     
     <Header/>
-    <main>
+    <main className=''>
         <section className=''>
                 <Hero/>
         </section>

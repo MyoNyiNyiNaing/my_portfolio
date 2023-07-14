@@ -9,7 +9,7 @@ const Hero = () => {
   Aos.init();
 
   return (
-    <div id="home" className="max-w-[1215px] h-auto lg:h-screen pt-5 lg:pt-[80px] mx-auto">
+    <div id="home" className="max-w-[1215px] pt-[100px] h-auto lg:h-screen mx-auto">
       <div className="flex flex-wrap-reverse px-5 justify-between items-center">
         <div className="w-full lg:px-0 mx-auto lg:w-[650px] mb-[100px] lg:mb-0">
           <h1

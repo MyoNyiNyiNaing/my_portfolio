@@ -26,14 +26,14 @@ const About = () => {
       {/* gallery */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mb-[90px]">
         <div className="">
-          <img className="h-[300px] md:h-[500px] w-full object-cover object-right-bottom" src="src\assets\about\contact2.jpg" />
+          <img className="h-[300px] md:h-[500px] w-full object-cover object-right-bottom" src="../src/assets/about/contact2.jpg" />
         </div>
         <div className="col-span-1 lg:col-span-2 ">
-          <img className="h-[300px] md:h-[500px] w-full object-cover" src="src\assets\about\contact.jpg" />
+          <img className="h-[300px] md:h-[500px] w-full object-cover" src="../src/assets/about/contact.jpg" />
         </div>
         <div className=" flex justify-between lg:flex lg:flex-col">
-          <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale2.jpg" />
-          <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="src\assets\about\hotale.jpg" />
+          <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="../src/assets/about/hotale2.jpg" />
+          <img  className="h-auto md:h-[250px] w-[48%] md:w-full object-cover" src="../src/assets/about/hotale.jpg" />
         </div>
       </div>
       <div className=" mb-[90px]">

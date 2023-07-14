@@ -9,12 +9,11 @@ const Hero = () => {
   Aos.init();
 
   return (
-    <div
-      id="home"
-      className="max-w-[1215px] h-auto lg:h-screen pt-5 lg:pt-[80px] mx-auto"
-    >
+
+    <div id="home" className="max-w-[1215px] h-auto lg:h-screen pt-5 lg:pt-[60px] mx-auto">
+
       <div className="flex flex-wrap-reverse px-5 justify-between items-center">
-        <div className="w-full lg:px-0 mx-auto lg:w-[650px] mb-[100px] lg:mb-0">
+        <div className="w-full lg:px-0 mx-auto lg:w-[550px] xl:w-[650px] mb-[100px] lg:mb-0">
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -57,7 +56,7 @@ const Hero = () => {
           data-aos-duration="1000"
           data-aos-once="true"
           data-aos-delay="100"
-          className="mx-auto mb-5 md:mb-0 w-[300px] xl:w-[500px]"
+          className="mx-auto mb-5 md:mb-0 w-[300px] lg:w-[400px] xl:w-[500px]"
         >
           <img src={profile2} />
         </div>

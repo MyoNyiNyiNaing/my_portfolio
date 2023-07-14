@@ -4,6 +4,7 @@ import ProjectsCard from "./ProjectsCard";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { useEffect } from "react";
+import Button from "../Button";
 
 const Projects = () => {
   useEffect(() => {
@@ -33,20 +34,11 @@ const Projects = () => {
             </h2>
           </div>
         </div>
-        <div className=" font-medium relative">
-          <div className="button_up transition-all duration-300 cursor-pointer">
-            <div className=" text-[#fff] font-medium text-[18px] leading-[100%]">
-              View all projects
-            </div>
-          </div>
-          <div className="button_down"></div>
-        </div>
+        <Button text={"View all projects"} />
       </div>
-      <div className="grid grid-col-1 justify-center md:grid-cols-3 gap-x-5 max-w-[1215px] px-5 mx-auto pt-[65px] gap-10">
+      <div className="grid grid-cols-12 mx-auto  gap-5 max-w-[1215px] px-5 pt-[65px]">
         {projects.map((project) => (
-          <div className="group">
-            <ProjectsCard key={project.id} {...project} />
-          </div>
+          <ProjectsCard key={project.id} {...project} />
         ))}
       </div>
     </div>

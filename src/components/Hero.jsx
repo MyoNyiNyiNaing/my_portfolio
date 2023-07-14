@@ -2,16 +2,18 @@ import React from "react";
 import Button from "./Button";
 import { FiArrowRight } from "react-icons/fi";
 // import profile from "../assets/profile-removebg-preview.png";
-import profile2 from "../assets/profile2.png"
+import profile2 from "../assets/profile2.png";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 const Hero = () => {
   Aos.init();
 
   return (
+
     <div id="home" className="max-w-[1215px] pt-[100px] h-auto lg:h-screen mx-auto">
+
       <div className="flex flex-wrap-reverse px-5 justify-between items-center">
-        <div className="w-full lg:px-0 mx-auto lg:w-[650px] mb-[100px] lg:mb-0">
+        <div className="w-full lg:px-0 mx-auto lg:w-[550px] xl:w-[650px] mb-[100px] lg:mb-0">
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -52,12 +54,11 @@ const Hero = () => {
         <div
           data-aos="zoom-out"
           data-aos-duration="1000"
-          data-aos-once="true" 
+          data-aos-once="true"
           data-aos-delay="100"
-          className="mx-auto mb-5 md:mb-0 w-[300px] xl:w-[500px]"
+          className="mx-auto mb-5 md:mb-0 w-[300px] lg:w-[400px] xl:w-[500px]"
         >
           <img src={profile2} />
-        
         </div>
       </div>
     </div>

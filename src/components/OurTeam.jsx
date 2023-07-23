@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import OurTeamCard from "./OurTeamCard";
 import mkz from "../assets/TeamMember/minkhantzaw.jpg";
 import wla from "../assets/TeamMember/wailinnaung.jpg";
 import mnnn from "../assets/TeamMember/myonyinyinaing.jpg";
 import stl from "../assets/TeamMember/shinthantlwin.jpg";
+import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const OurTeam = () => {
+  const sliderRef = useRef();
   const teamMembers = [
     {
       id: 1,
@@ -37,16 +43,56 @@ const OurTeam = () => {
 
   return (
     <div>
-      <div className=" lg:max-w-[1215px] xl:max-w-[1500px] lg:mx-auto mx-5">
-        <div className=" text-center mb-20">
-          <h1 className="text-[54px] dark:text-white text-black font-[700]">
-            Our Team
-          </h1>
-        </div>
-        <div className=" xl:max-w-[90%] mx-auto flex justify-center flex-wrap gap-3">
-          {teamMembers.map((member, i) => (
-            <OurTeamCard key={member.id} member={member} index={i} />
-          ))}
+      <div className=" lg:max-w-[1215px] lg:mx-auto px-5">
+        <div className=" max-lg:space-y-20 lg:grid lg:grid-cols-3 gap-10">
+          <div>
+            <h1 className=" text-title_sm md:text-title font-[700] text-black dark:text-white mb-10">
+              Our Team
+            </h1>
+            <p className="text-base_sm md:text-base text-gray-500 dark:text-gray-300 font-[500]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              minima dignissimos est sapiente quos fugiat incidunt odio
+              perspiciatis porro veritatis.
+            </p>
+          </div>
+          <div className=" lg:col-span-2 max-sm:w-[80%] max-sm:mx-auto">
+            <Swiper
+              onSwiper={(it) => (sliderRef.current = it)}
+              slidesPerView={1}
+              loop={true}
+              speed={1000}
+              modules={[Navigation]}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                
+              }}
+              className=" mySwiper pb-5"
+            >
+              {teamMembers.map((member, i) => (
+                <SwiperSlide>
+                  <OurTeamCard key={member.id} member={member} index={i} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <div className="mt-5 flex items-center justify-end">
+              <div
+                onClick={() => sliderRef.current?.slidePrev()}
+                className=" z-10 cursor-pointer bg-black text-white dark:text-black dark:bg-white w-12 h-14 flex items-center justify-center"
+              >
+                <MdArrowBackIosNew />
+              </div>
+              <div
+                onClick={() => sliderRef.current?.slideNext()}
+                className=" z-10 cursor-pointer bg-black text-white dark:text-black dark:bg-white w-12 h-14 flex items-center justify-center"
+              >
+                <MdArrowForwardIos />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
